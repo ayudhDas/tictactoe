@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div class="game-container">
+        <section class="header">
+            <h2 class="title">Tic Tac Toe</h2>
+            <p class="subtitle">The simple game of <span class="emphasised">X</span> and <span class="emphasised">0</span></p>
+            <p class="current-indicator">Current player: <span class="current-player" id="current-player">X</span></p>
+        </section>
+        <section class="main">
+            <div class="board">
+                <div class="overlay">
+                    <button id="newGame">Start</button>
+                </div>
+                <div class="row" id="r0">
+                    <div class="cell" id="p-0-0">X</div>
+                    <div class="cell" id="p-0-1">X</div>
+                    <div class="cell" id="p-0-2">X</div>
+                </div>
+                <div class="row" id="r1">
+                    <div class="cell" id="p-1-0">0</div>
+                    <div class="cell" id="p-1-1">0</div>
+                    <div class="cell" id="p-1-2">0</div>
+                </div>
+                <div class="row" id="r2">
+                    <div class="cell" id="p-2-0">0</div>
+                    <div class="cell" id="p-2-1">0</div>
+                    <div class="cell" id="p-2-2">0</div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="announce">
+                <div class="message">
+                     <span id="winner"></span> won
+                </div>
+            </div>
+            <p class="footer-text">
+                Made by using JS <span class="heart"></span>
+            </p>
+        </section>
+    </div>
+    <script src="src/game.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
